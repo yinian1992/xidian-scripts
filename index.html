@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Xidian-scripts : a collection of scripts for xidian" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Xidian-scripts</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/xdlinux/xidian-scripts">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Xidian-scripts</h1>
+          <h2 id="project_tagline">a collection of scripts for xidian</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/xdlinux/xidian-scripts/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/xdlinux/xidian-scripts/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>xidian-scripts</h1>
+
+<h2>这是什么?</h2>
+
+<p>只是一些实用的小脚本</p>
+
+<pre><code>* get_xidian_news: 获得近期校内的新闻
+
+* get_pay_info: 获得自己校园网流量使用情况
+
+* get_grades: 查询自己的成绩
+</code></pre>
+
+<h2>Setup</h2>
+
+<p>我在Mac Os X上使用Python 2.7.2, Linux应该也没问题:)</p>
+
+<p>我假定你已经安装好了python和<a href="http://www.pip-installer.org/en/latest/" title="Pip">pip</a></p>
+
+<ol>
+<li>
+<p>安装依赖:</p>
+
+<p>pip install requests, lxml</p>
+</li>
+<li><p>如果要使用get_pay_info, 请安装 <a href="http://code.google.com/p/tesseract-ocr/">tesseract</a></p></li>
+<li><p>在get_pay_info.py, get_grades.py设置自己的学号和密码</p></li>
+<li><p>在get_xidian_news.py中的DAY输入你想获得最近几天的消息</p></li>
+<li><p>没有第5步</p></li>
+</ol><h2>Usage</h2>
+
+<p>完全由你决定如何使用:)</p>
+
+<ol>
+<li>手动执行</li>
+<li>
+<p>把get_pay_info.py加到shell启动脚本中</p>
+
+<p><img src="http://i.imgur.com/A227l.png" alt=""></p>
+</li>
+<li>
+<p>结合grep查询指定科的成绩</p>
+
+<p><img src="http://i.imgur.com/h4iKJ.png" alt=""></p>
+</li>
+<li><p>自己定制啦:)</p></li>
+</ol><h2>最后</h2>
+
+<p>欢迎pull requests</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Xidian-scripts maintained by <a href="https://github.com/xdlinux">xdlinux</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
