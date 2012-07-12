@@ -6,6 +6,10 @@ import re
 import time
 from lxml import html
 
+# '09 before
+# BASE_URL = "http://219.245.123.226/xdjwWeb"
+
+# '10 after
 BASE_URL = "http://219.245.123.226/xdjwWebNew"
 
 LOGIN_URL = BASE_URL + "/systemAdmin/Login.jsp?command=studentLogin"
@@ -55,5 +59,11 @@ def hash_password(password, share_value):
 
 
 if __name__ == '__main__':
-    s = login()
-    print_grades(s)
+    while True:
+        try:
+            s = login()
+            print_grades(s)
+        except requests.exceptions.ConnectionError:
+            pass
+        else:
+            break
